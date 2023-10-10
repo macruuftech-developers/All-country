@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  width: 100%;
+  padding: 2% 8%;
+}
+.header h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.header .form {
+  width: 100%;
+  display: flex;
+  margin-top: 6px;
+}
+.form input {
+  width: 85%;
+  height: 35px;
+  border: 1px solid #000;
+  padding: 5px;
+  font-size: 19px;
+}
+#refresh {
+  margin-left: 8px;
+  padding: 5px 10px;
+}
+.row-co {
+  width: 100%;
+  padding: 2% 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}
+.row-co .box {
+  background-color: #f3f3f3;
+  box-shadow: 0px 0px 6px #0000004b;
+  width: 100%;
+  padding-bottom: 6px;
+}
+.box img {
+  width: 100%;
+  height: auto;
+}
+.box h1 {
+  margin: 10px 5px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.box .row {
+  border-top: 1px solid #00000069;
+  padding: 7px 3px;
+  display: flex;
+}
+.box .row span {
+  font-weight: 700;
+  margin-right: 6px;
+}
+@media (max-width: 768px) {
+  .row-co {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .row-co {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
